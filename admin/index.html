@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온리원 | 관리자 모드</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="admin-header">
+        <h2><i class="fa-solid fa-leaf"></i> 온리원 관리자</h2>
+        <div class="date-time">
+            <span id="display-date"></span>
+            <span id="clock"></span>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span>오늘 접수</span>
+                <strong>3건</strong>
+            </div>
+            <div class="stat-card">
+                <span>미확인 내역</span>
+                <strong>1건</strong>
+            </div>
+        </div>
+
+        <h3 style="margin-bottom: 15px; font-size: 1.1rem;">최근 상담 신청 리스트</h3>
+
+        <!-- 상담신청 카드 1 -->
+        <div class="reservation-card">
+            <div class="res-date">2025-12-18 14:20</div>
+            <div class="res-info">
+                <span class="tag">개인 심리 상담</span>
+                <h3>김소중 님</h3>
+            </div>
+            <div class="res-contact">
+                <div>
+                    <i class="fa-solid fa-phone"></i> 010-1234-5678<br>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i> help@example.com
+                </div>
+            </div>
+            <div class="res-memo">
+                요즘 학업으로 인한 스트레스가 심하고 자존감이 많이 떨어져서 상담을 신청합니다.
+            </div>
+            <div class="action-btns">
+                <a href="#" class="btn-gray">삭제하기</a>
+                <a href="#" class="btn">확인</a>
+            </div>
+        </div>
+        
+        <!-- 상담신청 카드 2 -->
+        <div class="reservation-card">
+            <div class="res-date">2025-12-18 14:20</div>
+            <div class="res-info">
+                <span class="tag">개인 심리 상담</span>
+                <h3>김소중 님</h3>
+            </div>
+            <div class="res-contact">
+                <div>
+                    <i class="fa-solid fa-phone"></i> 010-1234-5678<br>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i> help@example.com
+                </div>
+            </div>
+            <div class="res-memo">
+                요즘 학업으로 인한 스트레스가 심하고 자존감이 많이 떨어져서 상담을 신청합니다.
+            </div>
+            <div class="action-btns">
+                <a href="#" class="btn-gray">삭제하기</a>
+                <a href="#" class="btn">확인</a>
+            </div>
+        </div>
+        
+        <!-- 상담신청 카드 3 -->
+        <div class="reservation-card">
+            <div class="res-date">2025-12-18 14:20</div>
+            <div class="res-info">
+                <span class="tag">개인 심리 상담</span>
+                <h3>김소중 님</h3>
+            </div>
+            <div class="res-contact">
+                <div>
+                    <i class="fa-solid fa-phone"></i> 010-1234-5678<br>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i> help@example.com
+                </div>
+            </div>
+            <div class="res-memo">
+                요즘 학업으로 인한 스트레스가 심하고 자존감이 많이 떨어져서 상담을 신청합니다.
+            </div>
+            <div class="action-btns">
+                <a href="#" class="btn-gray">삭제하기</a>
+                <a href="#" class="btn">확인</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // 오늘 날짜
+        const today = new Date();
+        const year = today.getFullYear(); // 년
+        const month = today.getMonth() + 1; // 월
+        const date = today.getDate(); // 일
+        const dayNumber = today.getDay(); // 0~6 사이의 숫자
+
+        // 요일 변환 배열
+        const dayList = ['일', '월', '화', '수', '목', '금', '토'];
+        const dayKorean = dayList[dayNumber];
+
+        const timeText = `${year}년 ${month}월 ${date}일 (${dayKorean})`;
+
+        document.getElementById('display-date').innerText = timeText;
+
+        // 현재 시각
+        setInterval(() => {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('clock').innerText = timeString;
+        }, 1000);
+    </script>
+</body>
+
+</html>

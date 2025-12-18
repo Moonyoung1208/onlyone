@@ -1,0 +1,122 @@
+
+@charset "utf-8";
+
+.admin-header {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-container {
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card span {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.stat-card strong {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.reservation-card {
+    background: white;
+    border-radius: 15px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-size: 0.75rem;
+}
+
+.res-info h3 {
+    font-size: 1.125rem;
+    margin-bottom: 5px;
+}
+
+.res-info .tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-block;
+    padding: 2px 8px;
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.res-contact {
+    color: #555;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.res-memo {
+    background: #fdfdfd;
+    border: 1px dashed #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    color: #666;
+}
+
+.action-btns {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.btn {
+    flex: 1;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.btn-gray {
+    flex: 1;
+    background: var(--secondary);
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
