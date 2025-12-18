@@ -1,9 +1,12 @@
 @charset "utf-8";
 
+body {
+    font-family: 'Pretendard', sans-serif;
+}
 .admin-header {
     background: var(--primary);
     color: white;
-    padding: 20px;
+    padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -27,35 +30,28 @@
     font-size: 1.1rem;
 }
 
-.search-wrap {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 16px;
-}
-
-.search {
-    position: relative;
-}
-
-.search i {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-.filter {
+.intro {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
     display: flex;
-    gap: 0.5rem;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    margin-bottom: 1rem;
 }
 
-.filter input {
-    appearance: none;
-    width: 160px;
-    background: #fff;
+.search-btn {
+    display: block;
+    font-weight: bold;
+    width: fit-content;
+    background: var(--secondary);
+    color: #666;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
 }
 
 .stats-grid {
@@ -104,6 +100,7 @@
     color: #666;
     font-size: 0.875rem;
     font-weight: 500;
+    margin-bottom: 0.25rem;
 }
 
 .res-info h3 {
@@ -126,7 +123,7 @@
 
 .res-contact {
     color: #555;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -164,4 +161,24 @@
     padding: 10px;
     border-radius: 8px;
     font-size: 0.85rem;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.pagination ul li a {
+    display: block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.pagination ul li a.active {
+    background-color: var(--primary);
+    color: #fff;
 }
