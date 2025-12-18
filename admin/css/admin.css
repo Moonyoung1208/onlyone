@@ -22,10 +22,40 @@
     margin: auto;
 }
 
-
 .admin-container h2 {
     margin-bottom: 1rem;
     font-size: 1.1rem;
+}
+
+.search-wrap {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.search {
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.filter {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.filter input {
+    appearance: none;
+    width: 160px;
+    background: #fff;
 }
 
 .stats-grid {
