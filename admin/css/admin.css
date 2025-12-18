@@ -61,6 +61,12 @@
     font-size: 0.75rem;
 }
 
+.res-date {
+    color: #666;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
 .res-info h3 {
     font-size: 1.125rem;
     margin-bottom: 5px;
